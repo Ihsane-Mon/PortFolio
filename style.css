@@ -1,1 +1,80 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: lightgray;
+    align-items: center;
+    border-radius: 10px;
+}
 
+#header h1 {
+    font-size: 24px;
+    color: darkblue;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: darkblue;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.profil-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px; /* carré arrondi */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 40px auto;
+    gap: 20px;
+}
+
+.profil-content {
+    flex: 1;
+}
+
+.profil-content h1 {
+    margin-bottom: 10px;
+}
+
+.profil-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.profil-photo img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px; /* arrondi de la photo */
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(270deg, #ffffff, #d5d5d5, #c9c9c9);
+  background-size: 600% 600%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
